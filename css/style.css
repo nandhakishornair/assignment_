@@ -1,0 +1,102 @@
+
+*
+.sign-in{
+    background-image: url("/img/homepage2.jpg"); 
+    background-size: cover ;
+    background-repeat: no-repeat;
+
+}
+
+.container-fluid img{
+    height: 70px;
+    width: 70px;
+}
+
+.myMargin
+{
+    margin-top: 60px;
+    margin-left: 40px;
+    background-color: rgb(224, 168, 95);
+    padding-left: 20px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    border-radius: 5%;
+}
+
+.margin 
+{
+    margin-right: 40px;
+    margin-left: 40px;  
+} 
+
+.centering-form
+{
+   margin-left: 500px;
+}
+
+.log-in
+{
+    background-color: rgb(51, 37, 6); 
+    background-size: contain ;
+    background-repeat: no-repeat;  
+}
+
+.state-img
+{
+   background-color:antiquewhite;
+   padding-top : 50px;
+   padding-bottom: 50px;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+.state-img img,.carincar img
+{
+width: 40rem;
+height: 500px;
+border-top-right-radius: 1%;
+border-top-left-radius: 1%;
+}
+.card{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-bottom-left-radius: 1%;
+    border-bottom-right-radius: 1%;
+    box-shadow:5px 5px 10px rgb(129, 94, 18);
+ 
+}
+.car-img img
+{
+    height:700px;
+    width: 100%;
+    border:2px solid rgb(59, 36, 36);
+
+}
+.car-txt2 
+{
+    padding-top: 200px;
+    padding-left: 200px;     
+}
+.smallcards img
+{
+    height:300px;
+}
+.car-txt1 
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: antiquewhite;
+    
+}
+.carincar{
+    background-color: antiquewhite;
+}
+.carou2 img
+{
+    height: 300px;
+}
+.cardindex2 img
+{
+     height:250px;
+}
