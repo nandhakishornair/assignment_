@@ -1,7 +1,7 @@
 
 *
 .sign-in{
-    background-image: url("/img/homepage2.jpg"); 
+    background-image: url("../img/homepage2.jpg"); 
     background-size: cover ;
     background-repeat: no-repeat;
 
