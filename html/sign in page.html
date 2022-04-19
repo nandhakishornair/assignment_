@@ -27,7 +27,7 @@
                 <a class="nav-link " aria-current="page" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Sign in</a>
+                <a class="nav-link active" href="#">sign in</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,7 +64,7 @@
     
     
      <div class="col-lg-3 myMargin" style="margin-bottom: 30px;">
-         <form class="row g-4"onsubmit=" return !!( phonenumber()&validateemail()); "action="./log in page.html">
+         <form class="row g-4"onsubmit=" return ((phonenumber() & pswdcheck())==1)" action="./log in page.html">
             <div class="col-md-12">
             <div class="container-fluid image ">
             <center> <img src="../img/logo2.png" alt=""> </center>
@@ -78,48 +78,37 @@
             <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"id="last_name" required>
             </div>
-        
+           <!-- email--------- -->
             <div class="col-md-12">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com"required>
+            <input type="email" class="form-control" id="inputEmail4" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="abc@gmail.com"required >
+             <!-- <p class="asa"id="va">valid email </p> -->
+             
             </div>
-            <!-- email msg showing -->
-            <!-- <div id="emailmsg"> -->
-            <!-- <p id="correct " class="invalid">A <b>correct</b>  format</p> -->
-            <!-- <p id="incorrect " class="invalid">A <b>incorrect</b> format</p> -->
-            <!-- </div> -->
+           <!-- password//////////// -->
             <div class="col-md-12">
               <label for="inputPassword4" class="form-label">Password</label>
               <input type="password" class="form-control" id="inputPassword4" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="type password"required>
            </div>
            <div id="message">
-             <h5>Password must contain the following:</h5>
+             <h6 id="heading"class="head">Password must contain the following:</h6>
              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
              <p id="number" class="invalid">A <b>number</b></p>
              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
            </div>
            <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress"  placeholder="1234 Main St"required>
+            <label for="inputPassword3" class="form-label"></label>
+            <input type="password" class="form-control" id="inputPassword3"  placeholder="retype password"required>
+            <p id="checkpassword"></p>
            </div>
            <div class="col-md-12">
            <label for="input.Ph" class="form-label">phone:no</label>
-           <input type="text" class="form-control" id="input.Ph" placeholder="x x x - x x x x x x x"required>
+           <input type="text" class="form-control" id="input.Ph" placeholder="x x x - x x x x x x x"required >
+           <p id="checkph"></p>
            </div>
-           <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-             <option selected>Choose...</option>
-             <option>Kerala</option>
-             <option >Thamil Nadu</option>
-             <option >Andhra Pradesh</option>
-            </select>
-           </div>
-           <div class="col-md-3">
-            <label for="inputZip" class="form-label">Zip</label required>
-            <input type="text" class="form-control" id="inputZip">
-           </div>
+           
+          
            <div class="col-md-12">
             <div class="form-check">
              <input class="form-check-input" type="checkbox" id="gridCheck" required>
@@ -135,8 +124,6 @@
            <div class="col-md-12">
             <a href="./log in page.html"
               button type="button" class="btn btn-secondary">login</button></a>
-           
-          
            
           </form>
            
@@ -168,17 +155,26 @@
         var capital = document.getElementById("capital");
         var number = document.getElementById("number");
         var length = document.getElementById("length");
+        var myInput2 = document.getElementById("inputPassword3");
 
         
         // When the user clicks on the password field, show the message box
         
         myInput.onfocus = function() {
-          document.getElementById("message").style.display = "block";
+          document.getElementById("heading").style.display = "block";
+          document.getElementById("letter").style.display = "block";
+          document.getElementById("capital").style.display = "block";
+          document.getElementById("number").style.display = "block";
+          document.getElementById("length").style.display = "block";
         }
         
         // When the user clicks outside of the password field, hide the message box
         myInput.onblur = function() {
-          document.getElementById("message").style.display = "none";
+          document.getElementById("heading").style.display = "none";
+          document.getElementById("letter").style.display = "none";
+          document.getElementById("capital").style.display = "none";
+          document.getElementById("number").style.display = "none";
+          document.getElementById("length").style.display = "none"; 
         }
         
         // When the user starts to type something inside the password field
@@ -221,7 +217,11 @@
             length.classList.remove("valid");
             length.classList.add("invalid");
           }
+          
+            
         }
+        
+        
         </script>
          <script src="../js/form.js"></script>
         

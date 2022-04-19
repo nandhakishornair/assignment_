@@ -73,11 +73,11 @@
         
        <div class="col-md-12">
          <label for="inputEmail4" class="form-label">Email</label>
-         <input type="email" class="form-control" id="inputEmail4" placeholder="abc@gmail.com"required >
+         <input type="email" class="form-control" id="inputEmail" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="abc@gmail.com"required >
        </div>
        <div class="col-md-12">
          <label for="inputPassword4" class="form-label">Password</label>
-         <input type="password" class="form-control" id="inputPassword4" placeholder="Must be at least 8 characters" required>
+         <input type="password" class="form-control" id="inputPassword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="input password" required>
        </div>
       
        <a class="nav-link" href="#">forgot password ?</a> 

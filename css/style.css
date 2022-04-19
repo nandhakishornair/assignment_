@@ -57,6 +57,7 @@ height: 500px;
 border-top-right-radius: 1%;
 border-top-left-radius: 1%;
 }
+
 .card{
     margin-top: 40px;
     margin-right: 20px;
@@ -71,6 +72,8 @@ border-top-left-radius: 1%;
     height:700px;
     width: 100%;
     border:2px solid rgb(59, 36, 36);
+    box-shadow:5px 5px 10px rgb(129, 94, 18);
+    border-radius:1%;
 
 }
 .car-txt2 
@@ -137,4 +140,14 @@ border-top-left-radius: 1%;
     left: -10px;
     content: "X";
   }
+  /* checkboxxxxxxxxxx */
   
+   
+
+.invalid{
+  display: none;
+}
+.head{
+  display: none;
+  color: black;
+}
