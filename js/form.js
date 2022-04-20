@@ -20,7 +20,7 @@ function phonenumber()
 {
   let phoneno = document.getElementById("input.Ph").value;
   let phoneno1 = /^\d{10}$/;
-  let phoneno2 = /^\(?([0-9]{3})\)?[-. ]?([0-9]{7})$/;
+  let phoneno2 = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
   let msg1 = document.getElementById("checkph"); 
   
   // let phoneno3 = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
