@@ -32,7 +32,7 @@ function phonenumber()
         }
       else
         {
-           msg1.style.color="brown";
+           msg1.style.color="#330066";
            msg1.textContent="X invalid phonenumber"; 
 
           return false;
@@ -51,7 +51,7 @@ function pswdcheck()
     
   }
   else{
-    msg.style.color="brown";
+    msg.style.color="#330066";
     msg.textContent="X password do not match";
     return false;
   }
@@ -65,4 +65,25 @@ function pswdcheck()
   // else{
     // inv.style.display="none";
   // }
+// }
+// function pswdcheck2()
+// {
+//   let pswd1=document.getElementById("inputPassword4");
+//   // let label=document.getElementsById("formlabel1");
+//   // let poor = /[a-z]/;
+//   let weak = /(?=.*?[0-9])/;
+//   let strong = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
+  
+//    if (pswd1.match(strong))
+//   {
+//    pswd1.style.border="2px solid orange";
+//   }
+//   if  (pswd1.match(weak))
+//   {
+//     label.style.border="2px solid orange";
+//   }
+//   else
+//   {
+//     label.style.border="2px solid red";
+//   }
 // }
